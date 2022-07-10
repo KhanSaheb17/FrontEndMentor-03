@@ -45,6 +45,6 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/KhanSaheb17)
-- Telegram - [@SakibBinYeasin](t.me/SakibBinYeasin)
+- Telegram - [@SakibBinYeasin](https://t.me/SakibBinYeasin)
 
 
