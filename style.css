@@ -1,0 +1,132 @@
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+ 
+:root {
+    font-size: 16px;
+    --clr1: #0A0C1C;
+    --clr2:  #1B1937;
+    --clr3: #AB5CDB;
+    --font-color: #a4a3af;
+    --heading-color: #fff;
+    --font1: 'Inter', sans-serif;
+    --font2: 'Lexend Deca', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mrb-20 { margin-bottom: 20px;}
+.mrb-40 { margin-bottom: 40px;}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr1);
+  min-height: 100vh;
+}
+
+main {
+  min-width: 330px;
+  max-width: 95%;
+  height: auto;
+  margin: 30px auto;
+  background-color: var(--clr2);
+  color: white;
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 13px;
+}
+
+.img-container {
+  width: 100%;
+  height:240px;
+background:#AB5CDB;
+border-radius: 13px 13px 0 0 ;
+}
+
+.image {
+  height: 100%;
+  width:100%;
+  
+  background: url("images/image-header-mobile.jpg");
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity:.75;
+}
+
+.text-container {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.highlight {
+  color:var(--clr3);
+}
+
+ul,li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  gap:30px;
+}
+
+.paragraph {
+  color:hsla(0, 0%, 100%, 0.75);
+  font-family: var(--font2);
+  line-height: 30px;
+  margin: 20px 10px 40px 10px;
+}
+
+.stat-value {
+  font-family: var(--font1);
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-name {
+  text-transform: uppercase;
+  font-family: var(--font2);
+ font-size: 14px;
+  color:hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+ main {
+   flex-direction: row-reverse;
+   width: 1120px;
+   height:450px;
+ }
+ 
+.img-container,.text-container{
+  width: 50%;
+}
+.text-container {
+  padding: 60px;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.paragraph {
+  margin: 20px 0;
+}
+.img-container  {
+  border-radius: 0 13px 13px 0;
+  height:100%;
+}
+ul  {
+  flex-direction: row;
+  margin-top: auto;
+  justify-content: space-between;
+}
+ 
+}
